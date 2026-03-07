@@ -13,38 +13,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-                child: Text('Container 1'),
+              CircleAvatar(
+                radius: 70.0,
+                backgroundImage: AssetImage('images/avatar.jpg'),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow,
-                    child: Text('Container 2'),
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.green[300],
-                    child: Text('Container 3'),
-                  ),
-                ],
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-                child: Text('Container 4'),
+              Text(
+                'Matkarimov Islambek',
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ],
           ),
